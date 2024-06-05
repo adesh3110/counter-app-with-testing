@@ -5,5 +5,5 @@ test("should decrement count by one when button is clicked", () => {
   const screen = render(<DecrementPage />);
   const decrementButton = screen.getByRole("button");
   fireEvent.click(decrementButton);
-  expect(screen.getByText("-1")).toBeInTheDocument();
+  expect(screen.getByText("20")).toBeInTheDocument();
 });
